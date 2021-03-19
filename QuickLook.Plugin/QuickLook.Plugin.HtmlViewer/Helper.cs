@@ -28,7 +28,7 @@ namespace QuickLook.Plugin.HtmlViewer
         {
             try
             {
-                return !string.IsNullOrEmpty(CoreWebView2Environment.GetAvailableBrowserVersionString());
+                return !string.IsNullOrEmpty(CoreWebView2Environment.GetAvailableBrowserVersionString(Path.Combine(App.LocalDataPath, @"Microsoft.WebView2.FixedVersionRuntime\\")));
             }
             catch (Exception)
             {

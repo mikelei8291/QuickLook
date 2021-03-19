@@ -43,6 +43,7 @@ namespace QuickLook.Plugin.HtmlViewer
                 {
                     CreationProperties = new CoreWebView2CreationProperties
                     {
+                        BrowserExecutableFolder = Path.Combine(App.LocalDataPath, @"Microsoft.WebView2.FixedVersionRuntime\\"),
                         UserDataFolder = Path.Combine(App.LocalDataPath, @"WebView2_Data\\")
                     }
                 };
